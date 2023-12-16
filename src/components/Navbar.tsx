@@ -1,7 +1,8 @@
 import React from 'react'
 import MaxWidthWrapper from './MaxWidthWrapper'
 import Link from 'next/link'
-import { Icons } from './ui/Icons'
+import { Icons } from './Icons'
+import NavItems from './NavItems'
 
 export default function Navbar() {
     return (
@@ -15,6 +16,9 @@ export default function Navbar() {
                                 <Link href='/'>
                                     <Icons.logo className='h-10 w-10' />
                                 </Link>
+                            </div>
+                            <div>
+                                <NavItems />
                             </div>
                         </div>
                     </div>
